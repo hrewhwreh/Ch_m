@@ -222,7 +222,7 @@ namespace Cm_1
                     v_1_ = v_1_2_ + Step_now / 2 / 6 * (l1_ + 2 * l2_ + 2 * l3_ + l4_);
 
                     double s1 = (v[i + 1] - v_1) / 15;
-                    double s2 = (v[i + 1] - v_1_) / 15;
+                    double s2 = (v_[i + 1] - v_1_) / 15;
                     if (s1 < 0) s1 = -s1;
                     if (s2 < 0) s2 = -s2;
                     if (Math.Max(s1, s2) > Local_error)
