@@ -127,9 +127,9 @@ namespace Cm_1
             double Step_now = Convert.ToDouble(textBox5.Text);
             int Number_steps = Convert.ToInt32(textBox6.Text);
             double b = Convert.ToDouble(textBox7.Text);
-            double[] x = new double[Number_steps + 1];
-            double[] v = new double[Number_steps + 1];
-            double[] v_ = new double[Number_steps + 1];
+            double[] x = new double[1];
+            double[] v = new double[1];
+            double[] v_ = new double[1];
             x[0] = Convert.ToDouble(textBox8.Text);
             v[0] = Convert.ToDouble(textBox9.Text);
             v_[0] = Convert.ToDouble(textBox10.Text);
@@ -144,6 +144,9 @@ namespace Cm_1
             {
                 for (int i = 0; i < Number_steps; i++)
                 {
+                    Array.Resize<double>(ref x, x.Length + 1);
+                    Array.Resize<double>(ref v, v.Length + 1);
+                    Array.Resize<double>(ref v_, v_.Length + 1);
                     x[i + 1] = x[i] + Step_now;
                     if (x[i + 1] > x_max + b)
                     {
@@ -167,6 +170,10 @@ namespace Cm_1
                 DrawGraph(zedGraphControl2, ref x, ref v_, colortype);
                 DrawGraph(zedGraphControl3, ref v, ref v_, colortype);
                 colortype++;
+                if (colortype == 8)
+                {
+                    colortype = 0;
+                }
             }
             else
             {
@@ -179,14 +186,15 @@ namespace Cm_1
                 int Num_dou = 0;
                 for (int i = 0; i < Number_steps; i++)
                 {
-                    x[i + 1] = x[i] + Step_now;
-                    if (x[i + 1] > x_max + b)
+                    if (x[i] + Step_now > x_max + b)
                     {
                         result[1] = x_max + b - x[i];
                         result[7] = Num_dou;
                         result[8] = Num_del;
                         break;
                     }
+                    Array.Resize<double>(ref v, v.Length + 1);
+                    Array.Resize<double>(ref v_, v_.Length + 1);
                     double k1 = func1(m, c, k, k_, v[i], v_[i]);
                     double l1 = func2(v_[i]);
                     double k2 = func1(m, c, k, k_, v[i] + Step_now / 2 * k1, v_[i] + Step_now / 2 * l1);
@@ -227,40 +235,77 @@ namespace Cm_1
                     if (s2 < 0) s2 = -s2;
                     if (Math.Max(s1, s2) > Local_error)
                     {
+                        Array.Resize<double>(ref v, v.Length - 1);
+                        Array.Resize<double>(ref v_, v_.Length - 1);
                         Step_now = Step_now / 2;
                         Num_del++;
                         i--;
+                        if (Step_now > result[2])
+                        {
+                            result[2] = Step_now;
+                            result[3] = x[i + 1];
+                        }
+                        if (Step_now < result[4])
+                        {
+                            result[4] = Step_now;
+                            result[5] = x[i + 1];
+                        }
+                        if (result[6] < Math.Max(s1, s2))
+                        {
+                            result[6] = Math.Max(s1, s2);
+                        }
                     }
                     if (Math.Max(s1, s2) <= Local_error / 32)
                     {
+                        Array.Resize<double>(ref x, x.Length + 1);
+                        x[i + 1] = x[i] + Step_now;
                         Step_now = Step_now * 2;
                         dataGridView1.Rows.Add(i + 1, x[i + 1], v[i + 1], v_[i + 1], Step_now, Num_dou, Num_del, Math.Max(s1, s2), v_1, v_1_, s1 * 15, s2 * 15);
                         Num_dou++;
+                        if (Step_now > result[2])
+                        {
+                            result[2] = Step_now;
+                            result[3] = x[i + 1];
+                        }
+                        if (Step_now < result[4])
+                        {
+                            result[4] = Step_now;
+                            result[5] = x[i + 1];
+                        }
+                        if (result[6] < Math.Max(s1, s2))
+                        {
+                            result[6] = Math.Max(s1, s2);
+                        }
                     }
                     if (Math.Max(s1, s2) > Local_error / 32 && s1 + s2 <= Local_error)
                     {
+                        Array.Resize<double>(ref x, x.Length + 1);
+                        x[i + 1] = x[i] + Step_now;
                         dataGridView1.Rows.Add(i + 1, x[i + 1], v[i + 1], v_[i + 1], Step_now, Num_dou, Num_del, Math.Max(s1, s2), v_1, v_1_, s1 * 15, s2 * 15);
-                    }
-
-                    if (Step_now > result[2])
-                    {
-                        result[2] = Step_now;
-                        result[3] = x[i + 1];
-                    }
-                    if (Step_now < result[4])
-                    {
-                        result[4] = Step_now;
-                        result[5] = x[i + 1];
-                    }
-                    if (result[6] < Math.Max(s1, s2))
-                    {
-                        result[6] = Math.Max(s1, s2);
+                        if (Step_now > result[2])
+                        {
+                            result[2] = Step_now;
+                            result[3] = x[i + 1];
+                        }
+                        if (Step_now < result[4])
+                        {
+                            result[4] = Step_now;
+                            result[5] = x[i + 1];
+                        }
+                        if (result[6] < Math.Max(s1, s2))
+                        {
+                            result[6] = Math.Max(s1, s2);
+                        }
                     }
                 }
                 DrawGraph(zedGraphControl1, ref x, ref v, colortype);
                 DrawGraph(zedGraphControl2, ref x, ref v_, colortype);
                 DrawGraph(zedGraphControl3, ref v, ref v_, colortype);
                 colortype++;
+                if (colortype == 8)
+                {
+                    colortype = 0;
+                }
             }
             label25.Text = Convert.ToString(result[0]);
             label26.Text = Convert.ToString(result[1]);
@@ -271,6 +316,20 @@ namespace Cm_1
             label31.Text = Convert.ToString(result[5]);
             label32.Text = Convert.ToString(result[7]);
             label33.Text = Convert.ToString(result[8]);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            zedGraphControl1.GraphPane.CurveList.Clear();
+            zedGraphControl1.AxisChange();
+            zedGraphControl1.Invalidate();
+            zedGraphControl2.GraphPane.CurveList.Clear();
+            zedGraphControl2.AxisChange();
+            zedGraphControl2.Invalidate();
+            zedGraphControl3.GraphPane.CurveList.Clear();
+            zedGraphControl3.AxisChange();
+            zedGraphControl3.Invalidate();
+            dataGridView1.Rows.Clear();
         }
     }
 }

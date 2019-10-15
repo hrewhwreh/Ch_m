@@ -34,6 +34,27 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label34 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -48,6 +69,18 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Итерация = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.xv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Удвоения = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Деления = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ОЛП = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.v2i = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.zedGraphControl3 = new ZedGraph.ZedGraphControl();
             this.zedGraphControl2 = new ZedGraph.ZedGraphControl();
             this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
@@ -66,39 +99,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.Итерация = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.xv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Удвоения = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Деления = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ОЛП = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.v2i = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -132,9 +132,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(666, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(666, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(409, 144);
+            this.pictureBox2.Size = new System.Drawing.Size(574, 146);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -210,6 +210,185 @@
             this.tabPage2.Text = "Решение задачи";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(14, 272);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(37, 13);
+            this.label34.TabIndex = 52;
+            this.label34.Text = "x_max";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(52, 269);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(159, 20);
+            this.textBox12.TabIndex = 51;
+            this.textBox12.Text = "2";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(115, 567);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(0, 13);
+            this.label33.TabIndex = 50;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(115, 544);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(0, 13);
+            this.label32.TabIndex = 49;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(179, 498);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(0, 13);
+            this.label31.TabIndex = 48;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(81, 498);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(0, 13);
+            this.label30.TabIndex = 47;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(179, 473);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(0, 13);
+            this.label29.TabIndex = 46;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(81, 473);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(0, 13);
+            this.label28.TabIndex = 45;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(231, 521);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(0, 13);
+            this.label27.TabIndex = 44;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(115, 450);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(0, 13);
+            this.label26.TabIndex = 43;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(115, 427);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(0, 13);
+            this.label25.TabIndex = 42;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(11, 567);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(84, 13);
+            this.label24.TabIndex = 41;
+            this.label24.Text = "Число делений";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(11, 544);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(89, 13);
+            this.label23.TabIndex = 40;
+            this.label23.Text = "Число удвоений";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(144, 498);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(12, 13);
+            this.label22.TabIndex = 39;
+            this.label22.Text = "x";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(144, 473);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(12, 13);
+            this.label21.TabIndex = 38;
+            this.label21.Text = "x";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(11, 498);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(53, 13);
+            this.label20.TabIndex = 37;
+            this.label20.Text = "MIN(Шаг)";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(11, 473);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(56, 13);
+            this.label19.TabIndex = 36;
+            this.label19.Text = "MAX(Шаг)";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(11, 521);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(200, 13);
+            this.label18.TabIndex = 35;
+            this.label18.Text = "MAX(Оценка локальной погрешности)";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(11, 450);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(85, 13);
+            this.label17.TabIndex = 34;
+            this.label17.Text = "Остановка на x";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(11, 427);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(83, 13);
+            this.label16.TabIndex = 33;
+            this.label16.Text = "Шаг остановки";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(3, 405);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(100, 13);
+            this.label15.TabIndex = 32;
+            this.label15.Text = "Выходные данные";
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(234, 41);
@@ -218,6 +397,7 @@
             this.button2.TabIndex = 31;
             this.button2.Text = "Очистка";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -337,6 +517,78 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(449, 291);
             this.dataGridView1.TabIndex = 18;
+            // 
+            // Итерация
+            // 
+            this.Итерация.HeaderText = "Итерация";
+            this.Итерация.Name = "Итерация";
+            this.Итерация.Width = 180;
+            // 
+            // xi
+            // 
+            this.xi.HeaderText = "xi";
+            this.xi.Name = "xi";
+            this.xi.Width = 180;
+            // 
+            // vi
+            // 
+            this.vi.HeaderText = "vi";
+            this.vi.Name = "vi";
+            this.vi.Width = 180;
+            // 
+            // xv
+            // 
+            this.xv.HeaderText = "v\'i";
+            this.xv.Name = "xv";
+            this.xv.Width = 180;
+            // 
+            // hi
+            // 
+            this.hi.HeaderText = "hi";
+            this.hi.Name = "hi";
+            this.hi.Width = 180;
+            // 
+            // Удвоения
+            // 
+            this.Удвоения.HeaderText = "Удвоения";
+            this.Удвоения.Name = "Удвоения";
+            this.Удвоения.Width = 180;
+            // 
+            // Деления
+            // 
+            this.Деления.HeaderText = "Деления";
+            this.Деления.Name = "Деления";
+            this.Деления.Width = 180;
+            // 
+            // ОЛП
+            // 
+            this.ОЛП.HeaderText = "ОЛП";
+            this.ОЛП.Name = "ОЛП";
+            this.ОЛП.Width = 180;
+            // 
+            // v2i
+            // 
+            this.v2i.HeaderText = "v2i";
+            this.v2i.Name = "v2i";
+            this.v2i.Width = 180;
+            // 
+            // cv
+            // 
+            this.cv.HeaderText = "v2\'i";
+            this.cv.Name = "cv";
+            this.cv.Width = 180;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "vi - v2i";
+            this.Column11.Name = "Column11";
+            this.Column11.Width = 180;
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "v\'i - v2\'i";
+            this.Column12.Name = "Column12";
+            this.Column12.Width = 180;
             // 
             // zedGraphControl3
             // 
@@ -502,257 +754,6 @@
             this.label1.Size = new System.Drawing.Size(122, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Параметры уравнения";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(3, 405);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(100, 13);
-            this.label15.TabIndex = 32;
-            this.label15.Text = "Выходные данные";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(11, 427);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(83, 13);
-            this.label16.TabIndex = 33;
-            this.label16.Text = "Шаг остановки";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(11, 450);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(85, 13);
-            this.label17.TabIndex = 34;
-            this.label17.Text = "Остановка на x";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(11, 521);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(200, 13);
-            this.label18.TabIndex = 35;
-            this.label18.Text = "MAX(Оценка локальной погрешности)";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(11, 473);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(56, 13);
-            this.label19.TabIndex = 36;
-            this.label19.Text = "MAX(Шаг)";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(11, 498);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(53, 13);
-            this.label20.TabIndex = 37;
-            this.label20.Text = "MIN(Шаг)";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(144, 473);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(12, 13);
-            this.label21.TabIndex = 38;
-            this.label21.Text = "x";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(144, 498);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(12, 13);
-            this.label22.TabIndex = 39;
-            this.label22.Text = "x";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(11, 544);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(89, 13);
-            this.label23.TabIndex = 40;
-            this.label23.Text = "Число удвоений";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(11, 567);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(84, 13);
-            this.label24.TabIndex = 41;
-            this.label24.Text = "Число делений";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(115, 427);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(0, 13);
-            this.label25.TabIndex = 42;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(115, 450);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(0, 13);
-            this.label26.TabIndex = 43;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(231, 521);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(0, 13);
-            this.label27.TabIndex = 44;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(81, 473);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(0, 13);
-            this.label28.TabIndex = 45;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(179, 473);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(0, 13);
-            this.label29.TabIndex = 46;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(81, 498);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(0, 13);
-            this.label30.TabIndex = 47;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(179, 498);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(0, 13);
-            this.label31.TabIndex = 48;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(115, 544);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(0, 13);
-            this.label32.TabIndex = 49;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(115, 567);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(0, 13);
-            this.label33.TabIndex = 50;
-            // 
-            // Итерация
-            // 
-            this.Итерация.HeaderText = "Итерация";
-            this.Итерация.Name = "Итерация";
-            this.Итерация.Width = 180;
-            // 
-            // xi
-            // 
-            this.xi.HeaderText = "xi";
-            this.xi.Name = "xi";
-            this.xi.Width = 180;
-            // 
-            // vi
-            // 
-            this.vi.HeaderText = "vi";
-            this.vi.Name = "vi";
-            this.vi.Width = 180;
-            // 
-            // xv
-            // 
-            this.xv.HeaderText = "v\'i";
-            this.xv.Name = "xv";
-            this.xv.Width = 180;
-            // 
-            // hi
-            // 
-            this.hi.HeaderText = "hi";
-            this.hi.Name = "hi";
-            this.hi.Width = 180;
-            // 
-            // Удвоения
-            // 
-            this.Удвоения.HeaderText = "Удвоения";
-            this.Удвоения.Name = "Удвоения";
-            this.Удвоения.Width = 180;
-            // 
-            // Деления
-            // 
-            this.Деления.HeaderText = "Деления";
-            this.Деления.Name = "Деления";
-            this.Деления.Width = 180;
-            // 
-            // ОЛП
-            // 
-            this.ОЛП.HeaderText = "ОЛП";
-            this.ОЛП.Name = "ОЛП";
-            this.ОЛП.Width = 180;
-            // 
-            // v2i
-            // 
-            this.v2i.HeaderText = "v2i";
-            this.v2i.Name = "v2i";
-            this.v2i.Width = 180;
-            // 
-            // cv
-            // 
-            this.cv.HeaderText = "v2\'i";
-            this.cv.Name = "cv";
-            this.cv.Width = 180;
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "vi - v2i";
-            this.Column11.Name = "Column11";
-            this.Column11.Width = 180;
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "v\'i - v2\'i";
-            this.Column12.Name = "Column12";
-            this.Column12.Width = 180;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(52, 269);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(159, 20);
-            this.textBox12.TabIndex = 51;
-            this.textBox12.Text = "2";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(14, 272);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(37, 13);
-            this.label34.TabIndex = 52;
-            this.label34.Text = "x_max";
             // 
             // Form1
             // 
